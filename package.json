@@ -1,0 +1,30 @@
+{
+  "name": "stayfinder",
+  "version": "1.0.0",
+  "description": "A full-stack Airbnb-like web application for property listings and bookings",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "airbnb",
+    "property",
+    "booking",
+    "fullstack",
+    "react",
+    "nodejs"
+  ],
+  "author": "StayFinder Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
